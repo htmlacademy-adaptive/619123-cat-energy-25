@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи»
 
 * Студент: [Antonina Khisametdinova](https://up.htmlacademy.ru/adaptive/25/user/619123).
-* Наставник: `Неизвестно`.
+* Наставник: `Ольга Тюлихова`.
 
 ---
 
