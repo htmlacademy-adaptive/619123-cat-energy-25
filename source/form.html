@@ -22,13 +22,13 @@
     <main class="content">
       <h1 class="page__title">Подбор программы</h1>
       <p class="page__subtitle">Заполните анкету, и мы подберем программу питания для вашего кота</p>
-      <form class="application-form" name="cat-diet-data" action="" method="">
+      <form class="application-form" name="cat-application-form" action="https://echo.htmlacademy.ru" method="get">
         <fieldset class="fieldset">
           <legend class="fieldset__title visually-hidden">Данные о коте</legend>
           <input class="field__input--type-text" name="catname"
           type="text"
           id="catname"
-          value="Барсик"
+          placeholder="Барсик"
           required
           autofocus
           >
@@ -36,14 +36,14 @@
           <input class="field__input--type-number" name="catweight"
           type="number"
           id="catweight"
-          value="7"
+          placeholder="7"
           required
           >
           <label class="field__label--field-name" for="catweight">Вес:*</label>
           <input class="field__input--type-number" name="catage"
           type="number"
           id="catage"
-          value="7"
+          placeholder="7"
           >
           <label class="field__label--field-name" for="catage">Возраст (лет):</label>
         </fieldset>
@@ -74,12 +74,14 @@
           <input class="field__input--type-email" name="email"
           type="email"
           id="email"
+          placeholder="example@gmail.com"
           required
           >
           <label class="field__label--field-name" for="email">E-mail:*</label>
           <input class="field__input--type-phone" name="phone"
           type="tel"
           id="phone"
+          placeholder="+7 967 461 9991"
           required
           >
           <label class="field__label--field-name" for="phone">Телефон:*</label>
@@ -87,10 +89,9 @@
         <fieldset class="fieldset">
           <legend class="fieldset__title">Комментарий</legend>
           <textarea class="field__input--type-textarea" name="comment"
-          type="textarea"
+          placeholder="Расскажите обо всех повaдках кота"
           id="comment"
-          >Расскажите обо всех повaдках кота
-          </textarea>
+          ></textarea>
           <label class="field__label--field-name visually-hidden" for="comment">Комментарий</label>
         </fieldset>
         <fieldset class="fieldset">
@@ -114,7 +115,7 @@
           type="checkbox"
           id="buy-more-4"
           >
-          <label class="field__label--field-content" for="buy-more-5">Витамины</label>
+          <label class="field__label--field-content" for="buy-more-4">Витамины</label>
         </fieldset>
         <button class="button-primary">
           Отправить заявку
@@ -130,34 +131,33 @@
       <!-- Будет iframe с картой? -->
       <div class="contacts__map"></div>
     </section>
-  </main>
-  <footer class="footer">
-    <a href="#">
-      <img class="footer__logo" alt="Логотип" src="">
-    </a>
-    <ul class="footer__social-links">
-      <li>
-        <a class="footer__social-link" target="blank" href="#">
-          <img class="footer__social-link-icon" alt="Вконтакте" src="./img/vkontakte.svg">
-        </a>
-      </li>
-      <li>
-        <a class="footer__social-link" target="blank" href="#">
-          <img class="footer__social-link-icon" alt="Ютуб" src="./img/youtube.svg">
-        </a>
-      </li>
-      <li>
-        <a class="footer__social-link" target="blank" href="#">
-          <img class="footer__social-link-icon" alt="Телеграм" src="./img/telegram.svg">
-        </a>
-      </li>
-    </ul>
-    <div class="footer__copyright-container">
-      <p class="footer__copyright-description">HTML Academy</p>
-      <a class="footer__copyright-logo-link" href="#">
-      <img class="footer__copyright-logo-image" src="./img/footer-htmlacademy-logo.svg" alt="Логотип HTML Academy">
+    <footer class="footer">
+      <a href="#">
+        <img class="footer__logo" alt="Логотип" src="#">
       </a>
-    </div>
-  </footer>
+      <ul class="footer__social-links">
+        <li>
+          <a class="footer__social-link" target="blank" href="#">
+            <img class="footer__social-link-icon" alt="Вконтакте" src="./img/vkontakte.svg">
+          </a>
+        </li>
+        <li>
+          <a class="footer__social-link" target="blank" href="#">
+            <img class="footer__social-link-icon" alt="Ютуб" src="./img/youtube.svg">
+          </a>
+        </li>
+        <li>
+          <a class="footer__social-link" target="blank" href="#">
+            <img class="footer__social-link-icon" alt="Телеграм" src="./img/telegram.svg">
+          </a>
+        </li>
+      </ul>
+      <div class="footer__copyright-container">
+        <p class="footer__copyright-description">HTML Academy</p>
+        <a class="footer__copyright-logo-link" href="#">
+        <img class="footer__copyright-logo-image" src="./img/footer-htmlacademy-logo.svg" alt="Логотип HTML Academy">
+        </a>
+      </div>
+    </footer>
   </body>
 </html>
