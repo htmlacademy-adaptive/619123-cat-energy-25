@@ -6,15 +6,15 @@
   </head>
   <body class="page">
     <header class="header">
-      <a class="header__logo">
+      <a class="header__logo" href="index.html">
         <img class="header__logo-image" src="./img/logo-image.svg" alt="Логотип">
         <img class="header__logo-text" src="./img/logo-text.svg" alt="Логотип">
       </a>
       <button class="header__menu-icon">Меню</button>
       <nav class="main-nav">
-        <a class="main-nav__link main-nav__link--active" href="index.html">Главная</a>
+        <a class="main-nav__link" href="index.html">Главная</a>
         <a class="main-nav__link" href="catalog.html">Каталог продукции</a>
-        <a class="main-nav__link" href="form.html">Подбор программы</a>
+        <a class="main-nav__link main-nav__link--active" href="form.html">Подбор программы</a>
       </nav>
     </header>
     <main class="content">
@@ -65,7 +65,7 @@
           id="diet-goal-3"
           value="Набор массы"
           >
-          <label class="field__option-content" for="diet-goal-3">Набор массы</label>
+          <label class="field__option-content" for="diet-goal-3">Не знаю (Нужен ваш совет)</label>
         </fieldset>
         <fieldset class="fieldset">
           <legend class="fieldsetm__title">Контактные данные (владельца кота)</legend>
@@ -98,29 +98,33 @@
           <input class="field__checkbox" name="buy-more"
           type="checkbox"
           id="buy-more-1"
+          value="Cахарозаменитель"
           >
           <label class="field__option-content" for="buy-more-1">Cахарозаменитель</label>
           <input class="field__checkbox" name="buy-more"
           type="checkbox"
           id="buy-more-2"
+          value="Питьевая вода"
           >
           <label class="field__option-content" for="buy-more-2">Питьевая вода</label>
           <input class="field__checkbox" name="buy-more"
           type="checkbox"
           id="buy-more-3"
+          value="Молоко"
           >
           <label class="field__option-content" for="buy-more-3">Молоко</label>
           <input class="field__checkbox" name="buy-more"
           type="checkbox"
           id="buy-more-4"
+          value="Витамины"
           >
           <label class="field__option-content" for="buy-more-4">Витамины</label>
         </fieldset>
-        <button class="button-primary">
+        <button type="submit" class="button-primary">
           Отправить заявку
         </button>
       </form>
-      <p class="">* — Обязательные поля</p>
+      <p class="application-form__details">* — Обязательные поля</p>
     </main>
     <section class="contacts">
       <h2 class="visually-hidden">Контакты</h2>
