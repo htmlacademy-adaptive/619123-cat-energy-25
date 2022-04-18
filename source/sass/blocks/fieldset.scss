@@ -1,0 +1,34 @@
+.fieldset {
+  border: none;
+  margin: 0px 0px 20px 0px;
+  padding: 0px 20px;
+
+  &--cat-data {
+  }
+
+  &--diet-goal {
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-top: $divider 1px solid;
+    border-bottom: $divider 1px solid;
+  }
+
+  &--contacts {
+
+  }
+
+  &--comment {
+
+  }
+
+  &--buy-more {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.fieldset__title {
+  margin-bottom: 32px;
+}

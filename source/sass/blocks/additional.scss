@@ -1,0 +1,28 @@
+.additional {
+  margin-bottom: 60px;
+}
+
+.additional__title {
+  margin-bottom: 24px;
+}
+
+
+.additional-item__title {
+  margin-bottom: 10px;
+}
+
+.additional-item__info {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 12px;
+
+  &-name {
+    margin: 0 0 4px 0;
+    text-align: left;
+  }
+  &-value {
+    margin: 0 0 4px 0;
+    text-align: right;
+  }
+}

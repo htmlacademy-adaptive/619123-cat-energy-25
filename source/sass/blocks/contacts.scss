@@ -1,0 +1,23 @@
+.contacts {
+  display: flex;
+  align-items: center;
+  padding: 26px 20px 26px 20px;
+  background-color: $white;
+
+  &--internal-pages {
+    background-color: $background-light;
+    margin-top: 32px;
+  }
+}
+
+.contacts__title {
+
+}
+
+.contacts__container {
+  max-width: 160px;
+  min-width: 140px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
