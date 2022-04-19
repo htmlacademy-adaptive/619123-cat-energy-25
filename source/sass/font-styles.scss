@@ -2,7 +2,7 @@
   font-family: "Oswald";
   font-weight: 400;
   src:
-    local("Oswald")
+    local("Oswald"),
     url(../fonts/oswaldregular.woff2) format("woff2"),
     url(../fonts/oswaldregular.woff) format("woff");
 }
@@ -11,7 +11,7 @@
   font-family: "Oswald";
   font-weight: 500;
   src:
-    local("Oswald")
+    local("Oswald"),
     url(../fonts/oswaldmedium.woff2) format("woff2"),
     url(../fonts/oswaldmedium.woff) format("woff");
 }
@@ -31,7 +31,7 @@ $text-8xl: 60px;
 .text-xs {
   font-weight: normal;
   text-transform: none;
-  font-family: Arial, sans-serif;
+  font-family: "Arial", sans-serif;
   font-size: $text-xs;
   line-height: 12px;
   color: $text-secondary;
@@ -41,7 +41,7 @@ $text-8xl: 60px;
 .text-s {
   font-weight: normal;
   text-transform: none;
-  font-family: Arial, sans-serif;
+  font-family: "Arial", sans-serif;
   font-size: $text-s;
   line-height: 18px;
   color: $text-secondary;
@@ -55,7 +55,7 @@ $text-8xl: 60px;
 .text-base {
   font-weight: normal;
   text-transform: none;
-  font-family: Arial, sans-serif;
+  font-family: "Arial", sans-serif;
   font-size: $text-base;
   line-height: 20px;
   color: $text-secondary;
@@ -73,6 +73,7 @@ $text-8xl: 60px;
   &--18 {
     line-height: 18px;
   }
+
   &--20 {
     line-height: 20px;
   }
@@ -89,6 +90,7 @@ $text-8xl: 60px;
   &--18 {
     line-height: 18px;
   }
+
   &--20 {
     line-height: 20px;
   }
@@ -114,6 +116,7 @@ $text-8xl: 60px;
   &--20 {
     line-height: 20px;
   }
+
   &--30 {
     line-height: 30px;
   }
@@ -129,6 +132,7 @@ $text-8xl: 60px;
   &--26 {
     line-height: 26px;
   }
+
   &--30 {
     line-height: 30px;
   }

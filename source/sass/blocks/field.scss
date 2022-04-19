@@ -18,16 +18,13 @@
   }
 }
 
-.field__submit {
-// не пойму почему кнопка не распупонивается во всю ширину, как остальные
+.field__submit-button {
+  width: 100%;
+  margin-bottom: 20px;
+}
 
-  &-button {
-    margin-bottom: 20px;
-  }
-
-  &-note {
-    text-align: center;
-  }
+.field__submit-note {
+  text-align: center;
 }
 
 .field__input {

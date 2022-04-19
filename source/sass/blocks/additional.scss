@@ -16,13 +16,14 @@
   display: flex;
   justify-content: space-between;
   margin-bottom: 12px;
+}
 
-  &-name {
+.additional-item__info-name {
     margin: 0 0 4px 0;
     text-align: left;
   }
-  &-value {
+
+.additional-item__info-value {
     margin: 0 0 4px 0;
     text-align: right;
   }
-}
