@@ -1,9 +1,9 @@
 .header {
   padding: 12px 20px 12px 20px;
   position: relative;
-  border-top: 0px;
-  border-left: 0px;
-  border-right: 0px;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
   border-bottom: 1px;
   border-color: $divider;
   border-style: solid;
@@ -25,11 +25,7 @@
   height: 40px;
   border: none;
   background-color: $white;
-  background-image: url(../img/menu-icon-closed.svg);
-}
-
-.header__logo {
-
+  background-image: url("../img/menu-icon-closed.svg");
 }
 
 .header-nav {
@@ -46,9 +42,9 @@
   display: flex;
   justify-content: center;
   text-align: center;
-  border-top: 0px;
-  border-left: 0px;
-  border-right: 0px;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
   border-bottom: 1px;
   border-color: $divider;
   border-style: solid;
@@ -59,7 +55,5 @@
     text-decoration: underline;
     text-underline-offset: 10px;
     text-decoration-color: $accent;
-
   }
-
 }

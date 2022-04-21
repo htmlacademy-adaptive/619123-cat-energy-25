@@ -6,7 +6,7 @@
   margin-bottom: 16px;
 
   &:last-child {
-    margin-bottom: 0px;
+    margin-bottom: 0;
   }
 }
 
@@ -14,7 +14,7 @@
   margin-bottom: 12px;
 
   &:last-child {
-    margin-bottom: 0px;
+    margin-bottom: 0;
   }
 }
 
@@ -28,9 +28,8 @@
 }
 
 .field__input {
-  -webkit-appearance: none;
   appearance: none;
-  font-family : inherit;
+  font-family: inherit;
   text-transform: inherit;
   font-size: 100%;
   padding: 12px;
@@ -39,22 +38,6 @@
 
   &::placeholder {
     color: $gray2;
-  }
-
-  &--type-text {
-
-  }
-
-  &--type-number {
-
-  }
-
-  &--type-tel {
-
-  }
-
-  &--type-email {
-
   }
 
   &--type-textarea {
