@@ -1,0 +1,31 @@
+.digits {
+  // как сделать этот блок резиновым? чтобы размер блоков зависел от размера экрана?
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto 20px auto;
+  list-style: none;
+  padding: 0;
+}
+
+.digits__box {
+  width: 124px;
+  height: 56px;
+  display: flex;
+  padding-top: 8px;
+  justify-content: center;
+  box-sizing: border-box;
+  border: 1px solid $divider;
+}
+
+.digits__number {
+  display: block;
+  text-align: center;
+}
+
+.digits__description {
+  width: 77px;
+  display: block;
+  text-align: center;
+  background-color: $background-dark;
+  margin: -10px auto 0 auto;
+}

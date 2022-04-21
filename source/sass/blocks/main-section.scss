@@ -1,0 +1,23 @@
+.main-section {
+  margin-bottom: 20px;
+  padding: 24px 20px 0 20px;
+  background-color: opacify($accent, 0.85);
+  // background-image: url(../../img/main-section-background.png); хз как заставить это работать)))
+  // стилизацию фона и картинки лучше сделаю вместе с адаптивом, пока не понятно
+}
+
+.main-section__title {
+  color: $text-white;
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.main-section__subtitle {
+  color: $text-white;
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.main-section__image {
+  width: 280px;
+}

@@ -1,0 +1,181 @@
+@font-face {
+  font-family: "Oswald";
+  font-weight: 400;
+  src:
+    local("Oswald"),
+    url("../fonts/oswaldregular.woff2") format("woff2"),
+    url("../fonts/oswaldregular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Oswald";
+  font-weight: 500;
+  src:
+    local("Oswald"),
+    url("../fonts/oswaldmedium.woff2") format("woff2"),
+    url("../fonts/oswaldmedium.woff") format("woff");
+}
+
+$text-xs: 12px;
+$text-s: 14px;
+$text-base: 16px;
+$text-xl: 14px;
+$text-2xl: 16px;
+$text-3xl: 18px;
+$text-4xl: 20px;
+$text-5xl: 24px;
+$text-6xl: 30px;
+$text-7xl: 36px;
+$text-8xl: 60px;
+
+.text-xs {
+  font-weight: normal;
+  text-transform: none;
+  font-family: "Arial", sans-serif;
+  font-size: $text-xs;
+  line-height: 12px;
+  color: $text-secondary;
+  margin: 0;
+}
+
+.text-s {
+  font-weight: normal;
+  text-transform: none;
+  font-family: "Arial", sans-serif;
+  font-size: $text-s;
+  line-height: 18px;
+  color: $text-secondary;
+  margin: 0;
+
+  &--20 {
+    line-height: 20px;
+  }
+}
+
+.text-base {
+  font-weight: normal;
+  text-transform: none;
+  font-family: "Arial", sans-serif;
+  font-size: $text-base;
+  line-height: 20px;
+  color: $text-secondary;
+  margin: 0;
+}
+
+.text-xl {
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: $text-xl;
+  line-height: 16px;
+  color: $text-secondary;
+  margin: 0;
+
+  &--14 {
+    line-height: 14px;
+  }
+
+  &--18 {
+    line-height: 18px;
+  }
+
+  &--20 {
+    line-height: 20px;
+  }
+}
+
+.text-2xl {
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: $text-2xl;
+  line-height: 16px;
+  color: $text;
+  margin: 0;
+
+  &--18 {
+    line-height: 18px;
+  }
+
+  &--20 {
+    line-height: 20px;
+  }
+}
+
+.text-3xl {
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: $text-3xl;
+  line-height: 24px;
+  color: $text;
+  margin: 0;
+}
+
+.text-4xl {
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: $text-4xl;
+  line-height: 32px;
+  color: $text;
+  margin: 0;
+
+  &--20 {
+    line-height: 20px;
+  }
+
+  &--30 {
+    line-height: 30px;
+  }
+
+  &--medium {
+    font-weight: 500;
+  }
+}
+
+.text-5xl {
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: $text-5xl;
+  line-height: 24px;
+  color: $text;
+  margin: 0;
+
+  &--26 {
+    line-height: 26px;
+  }
+
+  &--30 {
+    line-height: 30px;
+  }
+
+  &--36 {
+    line-height: 36px;
+  }
+}
+
+.text-6xl {
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: $text-6xl;
+  line-height: 40px;
+  color: $text;
+  margin: 0;
+}
+
+.text-7xl {
+  font-weight: 400;
+  font-size: $text-7xl;
+  line-height: 36px;
+  color: $text;
+  margin: 0;
+
+  &--40 {
+    line-height: 40px;
+  }
+}
+
+.text-8xl {
+  font-weight: 400;
+  font-size: $text-8xl;
+  line-height: 60px;
+  color: $text;
+  margin: 0;
+}

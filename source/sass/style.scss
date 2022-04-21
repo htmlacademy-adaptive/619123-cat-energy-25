@@ -1,1 +1,28 @@
-// Начните писать стили здесь
+@import "colors",
+  "font-styles",
+  "button",
+  "button-link",
+  "visually-hidden",
+
+  "blocks/page",
+  "blocks/header",
+  "blocks/main-nav",
+  "blocks/content",
+  "blocks/main-section",
+  "blocks/diets",
+  "blocks/diet-programm",
+  "blocks/how-it-works",
+  "blocks/example",
+  "blocks/digits",
+  "blocks/contacts",
+  "blocks/map",
+  "blocks/footer",
+
+  "blocks/catalog.scss",
+  "blocks/card.scss",
+  "blocks/show-more.scss",
+  "blocks/additional.scss",
+  "blocks/fieldset.scss",
+  "blocks/field.scss"
+
+;
