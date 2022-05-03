@@ -14,9 +14,274 @@
 }
 
 .how-it-works__item {
-  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  margin: 0 0 20px 0;
 
   &:last-child {
-    margin-bottom: 0;
+    margin: 0;
+  }
+}
+
+.how-it-works__icon {
+  position: static;
+  width: 40px;
+  height: 40px;
+  padding: 10px 10px 10px 10px;
+  margin: 0 20px 0 0;
+  background-color: $accent;
+
+  &--leaf {
+    background-image: url("../img/how-it-works-leaf.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  &--water {
+    background-image: url("../img/how-it-works-water.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  &--tableware {
+    background-image: url("../img/how-it-works-tableware.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  &--time {
+    background-image: url("../img/how-it-works-time.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+.how-it-works__item-description {
+  width: 200px;
+}
+
+@media (min-width: $tablet-width) {
+  .how-it-works {
+    margin-bottom: 50px;
+    padding: 0 30px 0 30px;
+    border-bottom: 1px solid $divider;
+  }
+
+  .how-it-works__title {
+    font-size: $text-8xl;
+    line-height: 60px;
+    margin-bottom: 70px;
+  }
+
+  .how-it-works__list {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .how-it-works__item {
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0 130px 130px 0;
+
+    &:nth-child(2n) {
+      margin: 0;
+    }
+  }
+
+  .how-it-works__icon {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    padding: 20px 20px 20px 20px;
+    margin: 0 0 30px 0;
+    background-color: $accent;
+
+    &--leaf {
+      background-image: url("../img/how-it-works-leaf.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+
+      &::before {
+        content: "";
+        width: 130px;
+        height: 240px;
+        background-image: url("../img/how-it-work-number-1.svg");
+        position: absolute;
+        top: 0;
+        left: 140px;
+        z-index: -1;
+      }
+    }
+    &--water {
+      background-image: url("../img/how-it-works-water.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+
+      &::before {
+        content: "";
+        width: 130px;
+        height: 240px;
+        background-image: url("../img/how-it-work-number-2.svg");
+        position: absolute;
+        top: 0;
+        left: 140px;
+        z-index: -1;
+      }
+    }
+    &--tableware {
+      background-image: url("../img/how-it-works-tableware.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+
+      &::before {
+        content: "";
+        width: 130px;
+        height: 240px;
+        background-image: url("../img/how-it-work-number-3.svg");
+        position: absolute;
+        top: 0;
+        left: 140px;
+        z-index: -1;
+      }
+    }
+    &--time {
+      background-image: url("../img/how-it-works-time.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+
+      &::before {
+        content: "";
+        width: 130px;
+        height: 240px;
+        background-image: url("../img/how-it-work-number-4.svg");
+        position: absolute;
+        top: 0;
+        left: 140px;
+        z-index: -1;
+      }
+    }
+  }
+
+  .how-it-works__item-description {
+    width: 250px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .how-it-works {
+    margin-bottom: 50px;
+    padding: 0 110px 0 110px;
+    border-bottom: 1px solid $divider;
+  }
+
+  .how-it-works__title {
+    font-size: $text-8xl;
+    line-height: 60px;
+    margin-bottom: 70px;
+  }
+
+  .how-it-works__list {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .how-it-works__item {
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0 0 130px 0;
+
+    &:last-child {
+      margin: 0;
+    }
+
+    &:nth-child(2n) {
+      margin: 0;
+    }
+  }
+
+  .how-it-works__icon {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    padding: 20px 20px 20px 20px;
+    margin: 0 0 30px 0;
+    background-color: $accent;
+
+    &--leaf {
+      background-image: url("../img/how-it-works-leaf.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+
+      &::before {
+        content: "";
+        width: 130px;
+        height: 240px;
+        background-image: url("../img/how-it-work-number-1.svg");
+        position: absolute;
+        top: 0;
+        left: 140px;
+        z-index: -1;
+      }
+    }
+    &--water {
+      background-image: url("../img/how-it-works-water.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+
+      &::before {
+        content: "";
+        width: 130px;
+        height: 240px;
+        background-image: url("../img/how-it-work-number-2.svg");
+        position: absolute;
+        top: 0;
+        left: 140px;
+        z-index: -1;
+      }
+    }
+    &--tableware {
+      background-image: url("../img/how-it-works-tableware.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+
+      &::before {
+        content: "";
+        width: 130px;
+        height: 240px;
+        background-image: url("../img/how-it-work-number-3.svg");
+        position: absolute;
+        top: 0;
+        left: 140px;
+        z-index: -1;
+      }
+    }
+    &--time {
+      background-image: url("../img/how-it-works-time.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+
+      &::before {
+        content: "";
+        width: 130px;
+        height: 240px;
+        background-image: url("../img/how-it-work-number-4.svg");
+        position: absolute;
+        top: 0;
+        left: 140px;
+        z-index: -1;
+      }
+    }
+  }
+
+  .how-it-works__item-description {
+    width: 250px;
   }
 }
