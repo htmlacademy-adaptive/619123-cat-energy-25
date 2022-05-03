@@ -1,7 +1,9 @@
 .diet-programm {
+  display: flex;
+  flex-direction: column;
   background-color: $background-light;
   margin: 0 0 20px 0;
-  padding: 20px 20px 18px 20px;
+  padding: 20px 20px 20px 20px;
 
   &:last-child {
     margin: 0;
@@ -9,9 +11,179 @@
 }
 
 .diet-programm__title {
-  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  margin: 0 0 20px 0;
+}
+
+.diet-programm__title--slim {
+  &::before {
+    content: "";
+    display: block;
+    background-image: url("../img/slim.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 64px;
+    height: 56px;
+    margin: 0 8px 0 0;
+  }
+}
+
+.diet-programm__title--pro {
+  &::before {
+    content: "";
+    display: block;
+    background-image: url("../img/pro.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 64px;
+    height: 56px;
+    margin: 0 8px 0 0;
+  }
 }
 
 .diet-programm__description {
-  margin-bottom: 24px;
+  padding: 0 0 20px 0;
+  border-bottom: 1px $divider solid;
+  margin: 0 0 20px 0;
+}
+
+.diet-programm__link {
+  display: block;
+}
+
+@media (min-width: $tablet-width) {
+  .diet-programm {
+    display: flex;
+    flex-direction: column;
+    background-color: $background-light;
+    margin: 0 0 30px 0;
+    padding: 50px 50px 50px 50px;
+    position: relative;
+
+    &:last-child {
+      margin: 0;
+    }
+  }
+
+  .diet-programm__title {
+    width: 40%;
+    display: flex;
+    align-items: center;
+    margin: 0 0 24px 0;
+    font-size: $text-7xl;
+  }
+
+  .diet-programm__title--slim {
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 10%;
+      left: auto;
+      right: 40px;
+      background-image: url("../img/slim.svg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 280px;
+      height: 220px;
+      margin: 0;
+    }
+  }
+
+  .diet-programm__title--pro {
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 10%;
+      left: auto;
+      right: 40px;
+      background-image: url("../img/pro.svg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 270px;
+      height: 220px;
+      margin: 0;
+    }
+  }
+
+  .diet-programm__description {
+    width: 40%;
+    padding: 0;
+    border-bottom: none;
+    margin: 0 0 24px 0;
+    font-size: $text-2xl;
+    line-height: 24px;
+    color: $text;
+  }
+
+  .diet-programm__link {
+    display: block;
+    font-size: $text-4xl;
+    line-height: 30px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .diet-programm {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    background-color: $background-light;
+    margin: 0 80px 0 0;
+    padding: 50px 50px 50px 50px;
+
+    &:last-child {
+      margin: 0;
+    }
+  }
+
+  .diet-programm__title {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin: 0 0 40px 0;
+  }
+
+  .diet-programm__title--slim {
+    &::before {
+      content: "";
+      display: block;
+      position: static;
+      background-image: url("../img/slim.svg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 120px;
+      height: 100px;
+      margin: 0 40px 0 0;
+    }
+  }
+
+  .diet-programm__title--pro {
+    &::before {
+      content: "";
+      display: block;
+      position: static;
+      background-image: url("../img/pro.svg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 120px;
+      height: 100px;
+      margin: 0 40px 0 0;
+    }
+  }
+
+  .diet-programm__description {
+    width: 100%;
+    padding: 0;
+    border-bottom: none;
+    margin: 0 0 24px 0;
+  }
+
+  .diet-programm__link {
+    display: block;
+    font-size: $text-4xl;
+    line-height: 30px;
+  }
 }

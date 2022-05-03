@@ -2,5 +2,23 @@
   display: flex;
   flex-direction: column;
   padding: 0 20px 0 20px;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
+}
+
+@media (min-width: $tablet-width) {
+  .diets {
+    display: flex;
+    flex-direction: column;
+    padding: 0 30px 0 30px;
+    margin-bottom: 45px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .diets {
+    display: flex;
+    flex-direction: row;
+    padding: 0 110px 0 110px;
+    margin-bottom: 70px;
+  }
 }

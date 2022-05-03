@@ -2,18 +2,17 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Кэт энерджи</title>
     <link rel="stylesheet" href="./css/style.css">
   </head>
   <body class="page">
     <header class="header">
-      <div class="header__container">
-        <a class="header__logo">
-          <img class="header__logo-image" src="./img/logo-image.svg" alt="Логотип">
-          <img class="header__logo-text" src="./img/logo-text.svg" alt="Логотип">
-        </a>
-        <button class="header__menu-icon"></button>
-      </div>
+      <a class="header__logo" href="./index.html">
+      </a>
+      <a class="header__logo-text" href="./index.html">
+      </a>
+      <button class="header__menu-icon"></button>
       <nav class="header-nav">
         <a class="header-nav__link text-4xl text-4xl--20 text-4xl--medium" href="index.html">Главная</a>
         <a class="header-nav__link text-4xl text-4xl--20 text-4xl--medium" href="catalog.html">Каталог продукции</a>
@@ -155,15 +154,17 @@
         </div>
       </form>
     </main>
-    <section class="contacts contacts--internal-pages">
+    <section class="contacts">
       <h2 class="visually-hidden">Контакты</h2>
-      <h3 class="contacts__title text-2xl text-2xl--20">Приглашаем к сотрудничеству дилеров</h3>
-      <div class="contacts__container">
-        <p class="contacts__address text-s text-s--20">ул. Большая Конюшенная, д. 19/8</p>
-        <p class="contacts__city text-s text-s--20">Санкт-Петербург</p>
+      <div class="contacts__container contacts__container--internal-pages">
+        <h3 class="contacts__title text-2xl text-2xl--20">Приглашаем к сотрудничеству дилеров</h3>
+        <div class="contacts__adress-box">
+          <p class="contacts__address text-s text-s--20">ул. Большая Конюшенная, д. 19/8</p>
+          <p class="contacts__city text-s text-s--20">Санкт-Петербург</p>
+        </div>
       </div>
+      <div class="contacts__map"></div>
     </section>
-    <div class="map"></div>
     <footer class="footer">
       <a class="footer__logo-link" href="./index.html">
         <img class="footer__logo" alt="Логотип" src="./img/footer-logo.svg">

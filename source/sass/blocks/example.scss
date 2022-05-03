@@ -1,6 +1,16 @@
 .example {
-  background-color: $background-dark;
+  position: relative;
   padding: 26px 20px 40px 20px;
+}
+
+.example__background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: $background-dark;
+  z-index: -99;
 }
 
 .example__title {
@@ -11,8 +21,345 @@
   margin-bottom: 20px;
 }
 
-.example__costs {
+.example__image-block {
+  position: static;
+}
+
+.example__image-box {
+  width: 280px;
+  height: 230px;
+  margin: 20px auto 20px auto;
+}
+
+.example__image {
+  width: 100%;
+  height: 100%;
+
+  &--before {
+    background-image: url("../img/cat-before.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+.example__slider-box {
+  display: flex;
+  align-items: center;
+  padding: 0 40px 0 40px;
+}
+
+.example__slider-range {
+  width: 90px;
+  height: 14px;
+  background-color: $white;
+  box-sizing: border-box;
+  border: 1px solid $divider;
+  border-radius: 7px;
+  margin: 0 16px 0 16px;
+  flex-grow: 1;
+}
+
+.example__digits-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.example__digits-items {
+  width: 100%;
+  display: flex;
+  margin: 0 auto 20px auto;
+  list-style: none;
+  padding: 0;
+}
+
+.example__digits-item {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  padding-top: 8px;
+  justify-content: center;
+  box-sizing: border-box;
+  border: 1px solid $divider;
+  margin: 0 20px 0 0;
+
+  &:last-child {
+    margin: 0;
+  }
+}
+
+.example__digits-number {
+  display: block;
   text-align: center;
-  margin-bottom: 40px;
+  margin: 0 0 12px 0;
+}
+
+.example__digits-description {
+  width: 50%;
+  display: block;
+  text-align: center;
+  background-color: $background-dark;
+  margin: 0 auto -12px auto;
+}
+
+.example__digits-costs {
+  text-align: center;
   color: $text;
+  margin: 30px 0 40px 0;
+}
+
+@media (min-width: $tablet-width) {
+  .example {
+    position: relative;
+    padding: 40px 30px 60px 30px;
+  }
+
+  .example__background {
+    position: absolute;
+    top: auto;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 40%;
+    background-color: $background-dark;
+    z-index: -99;
+  }
+
+  .example__title {
+    font-size: $text-8xl;
+    line-height: 60px;
+    margin-bottom: 60px;
+  }
+
+  .example__description {
+    font-size: $text-base;
+    line-height: 24px;
+    margin-bottom: 50px;
+  }
+
+  .example__image-block {
+    position: static;
+  }
+
+  .example__image-box {
+    width: 590px;
+    height: 510px;
+    margin: 80px auto 20px auto;
+  }
+
+  .example__image {
+    width: 100%;
+    height: 100%;
+
+    &--before {
+      background-image: url("../img/cat-before-after.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
+  }
+
+  .example__slider-box {
+    display: flex;
+    align-items: center;
+    padding: 0 40px 0 40px;
+  }
+
+  .example__slider-range {
+    width: 90px;
+    height: 14px;
+    background-color: $white;
+    box-sizing: border-box;
+    border: 1px solid $divider;
+    border-radius: 7px;
+    margin: 0 16px 0 16px;
+    flex-grow: 1;
+  }
+
+  .example__digits-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .example__digits-items {
+    width: 360px;
+    display: flex;
+    margin: 0 0 20px 0;
+    list-style: none;
+    padding: 0;
+  }
+
+  .example__digits-item {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    padding-top: 16px;
+    justify-content: center;
+    box-sizing: border-box;
+    border: 1px solid $divider;
+    margin: 0 20px 0 0;
+
+    &:last-child {
+      margin: 0;
+    }
+  }
+
+  .example__digits-number {
+    display: block;
+    text-align: center;
+    margin: 0 0 10px 0;
+  }
+
+  .example__digits-description {
+    width: 90%;
+    display: block;
+    text-align: center;
+    background-color: $white;
+    margin: 4px auto -10px auto;
+    font-size: $text-s;
+    line-height: 14px;
+  }
+
+  .example__digits-costs {
+    width: 180px;
+    text-align: right;
+    font-size: $text-4xl;
+    line-height: 26px;
+    color: $text;
+    margin: 0 0 0 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .example {
+    position: relative;
+    padding: 40px 110px 60px 110px;
+  }
+
+  .example__background {
+    position: absolute;
+    top: auto;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 70%;
+    background-color: $background-dark;
+    z-index: -99;
+  }
+
+  .example__title {
+    width: 40%;
+    font-size: $text-8xl;
+    line-height: 60px;
+    margin-bottom: 150px;
+  }
+
+  .example__description {
+    width: 40%;
+    font-size: $text-base;
+    line-height: 24px;
+    margin-bottom: 70px;
+  }
+
+  .example__image-block {
+    position: absolute;
+    top: 0;
+    left: auto;
+    right: 100px;
+  }
+
+  .example__image-box {
+    width: 590px;
+    height: 510px;
+    margin: 0 auto 20px auto;
+  }
+
+  .example__image {
+    width: 100%;
+    height: 100%;
+
+    &--before {
+      background-image: url("../img/cat-before-after.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
+  }
+
+  .example__slider-box {
+    display: flex;
+    align-items: center;
+    padding: 0 40px 0 40px;
+  }
+
+  .example__slider-range {
+    width: 90px;
+    height: 14px;
+    background-color: $white;
+    box-sizing: border-box;
+    border: 1px solid $divider;
+    border-radius: 7px;
+    margin: 0 16px 0 16px;
+    flex-grow: 1;
+  }
+
+  .example__digits-container {
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .example__digits-items {
+    width: 360px;
+    display: flex;
+    margin: 0 0 60px 0;
+    list-style: none;
+    padding: 0;
+  }
+
+  .example__digits-item {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    padding-top: 16px;
+    justify-content: center;
+    box-sizing: border-box;
+    border: 1px solid $divider;
+    margin: 0 20px 0 0;
+
+    &:last-child {
+      margin: 0;
+    }
+  }
+
+  .example__digits-number {
+    display: block;
+    text-align: center;
+    margin: 0 0 10px 0;
+  }
+
+  .example__digits-description {
+    width: 90%;
+    display: block;
+    text-align: center;
+    background-color: $background-dark;
+    margin: 4px auto -10px auto;
+    font-size: $text-s;
+    line-height: 14px;
+  }
+
+  .example__digits-costs {
+    width: auto;
+    text-align: left;
+    font-size: $text-4xl;
+    line-height: 26px;
+    color: $text;
+    margin: 0 0 0 0;
+  }
 }
